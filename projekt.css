@@ -1,0 +1,59 @@
+body {
+  background-color: #F8F5EC;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "nav nav nav nav"
+  ". hleft hright hright"
+  ". main main ."
+  "aleft footer footer aright";
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navpadding {
+  padding: 20px 40px 60px 40px;
+}
+
+.logo {
+  align-items: flex-start;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+  font-family: baskerville URW;
+  font-weight: regular;
+}
+
+li a:hover {
+  color: #EB7023;
+}
